@@ -22,7 +22,7 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
-  originWhitelist: ['https://rusticotv.online', 'https://rusticotv.com', 'https://thewolfreed.rodeo', 'https://drtvrustic.bio'],
+  originWhitelist: ['https://rusticotv.online', 'https://rusticotv.com', 'https://derealfama.one/', 'https://drtvrustic.bio'],
   requireHeader: ['origin', 'x-requested-with'],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
