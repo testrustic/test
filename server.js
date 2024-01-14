@@ -22,7 +22,7 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
-  originWhitelist: ['https://rusticotv.online', 'https://rusticotv.com', 'https://derealfama.one', 'https://rusticotv.net', 'https://reidoscanais.com', 'https://rusticotv.xyz/', 'https://derealfama.one'],
+  originWhitelist: ['https://rusticotv.online', 'https://rusticotv.com', 'https://derealfama.one', 'https://rusticotv.net', 'https://reidoscanais.com', 'https://rusticotv.xyz/', 'https://derealfama.one', 'https://embed2.derealfama.one/'],
   requireHeader: ['origin', 'x-requested-with'],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
